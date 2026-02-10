@@ -30,3 +30,6 @@ sed -i 's/ssid=OpenWrt/ssid=USB-Server/g' package/kernel/mac80211/files/lib/wifi
 sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 ed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ set wireless.default_radio${devidx}.key=12345678' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
+chmod 775 files/etc/init.d/vhusbd
+chmod 775 files/usr/bin/vhusbd
