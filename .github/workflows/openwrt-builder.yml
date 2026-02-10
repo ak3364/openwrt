@@ -26,7 +26,7 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  SH_ACTIONS: true
+  SSH_ACTIONS: true
   TZ: Asia/Shanghai
 
 jobs:
